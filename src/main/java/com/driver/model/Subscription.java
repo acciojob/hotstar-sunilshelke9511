@@ -1,6 +1,8 @@
 package com.driver.model;
 
 
+import org.hibernate.annotations.CreationTimestamp;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -21,7 +23,7 @@ public class Subscription {
     private SubscriptionType subscriptionType;
 
     private int noOfScreensSubscribed;
-
+    @CreationTimestamp
     private Date startSubscriptionDate;
 
     private int totalAmountPaid;
